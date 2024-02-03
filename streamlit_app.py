@@ -42,7 +42,7 @@ try:
   
 # streamlit.write('The user entered ', fruit_choice)
 # streamlit.text(fruityvice_response.json()) #json output
-streamlit.header("The fruit load list contains:")
+ streamlit.header("The fruit load list contains:")
 def get_fruit_load_list():
   with my_cur.cursor() as my_cur:
     my_cur.execute("SELECT * from fruit_load_list")
